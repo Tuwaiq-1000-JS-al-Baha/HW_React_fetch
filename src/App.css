@@ -1,0 +1,23 @@
+.films {
+    background-color: black;
+}
+
+.title {
+    color: white;
+    margin-left: 10px;
+}
+
+h4 {
+    max-width: 800px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.carousels {
+    padding-bottom: 30px;
+}
