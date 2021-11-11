@@ -1,7 +1,5 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import CardItem from "./component/CardItem"
-import { Card, Row, Col } from "react-bootstrap"
 import Articles from "./component/Articles"
 
 function App() {
