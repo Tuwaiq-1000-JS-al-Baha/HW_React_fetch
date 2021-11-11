@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import NewItem from "./components/NewItem"
+import { Row } from "react-bootstrap"
 function App() {
   const [News, setNews] = useState([])
 
@@ -16,9 +17,12 @@ function App() {
   }, [])
   return (
     <>
-      {News.map(New => (
-        <NewItem New={New} />
-      ))}
+      <h1>News: </h1> <br /> <br />
+      <Row xs={1} md={3} className="g-4">
+        {News.map(New => (
+          <NewItem New={New} />
+        ))}
+      </Row>
     </>
   )
 }

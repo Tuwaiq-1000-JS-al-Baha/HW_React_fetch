@@ -1,11 +1,17 @@
+import { Card, Col } from "react-bootstrap"
+
 function NewItem(props) {
   return (
-    <div>
-      <h2>{props.New.author}</h2>
-      <h5>{props.New.title}</h5>
-      <p>{props.New.description}</p>
-      <img src={props.New.urlToImage} height="200px" />
-    </div>
+    <Col>
+      <Card>
+        <Card.Img variant="top" src={props.New.urlToImage} />
+        <Card.Body>
+          <Card.Title>{props.New.title}</Card.Title>
+          <Card.Text>Author: {props.New.author}</Card.Text>
+          <Card.Text>Description: {props.New.description} </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
   )
 }
 
