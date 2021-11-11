@@ -1,5 +1,26 @@
+import axios from "axios"
+import { useEffect, useState } from "react"
+import NewItem from "./components/NewItem"
 function App() {
-  return <></>
+  const [News, setNews] = useState([])
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://newsapi.org/v2/everything?q=Apple&from=2021-11-11&sortBy=popularity&apiKey=4ff17d68ee6c46f9bdf7ce4b27d23ad0"
+      )
+      .then(response => {
+        console.log(response.data.articles)
+        setNews(response.data.articles)
+      })
+  }, [])
+  return (
+    <>
+      {News.map(New => (
+        <NewItem New={New} />
+      ))}
+    </>
+  )
 }
 
 export default App
