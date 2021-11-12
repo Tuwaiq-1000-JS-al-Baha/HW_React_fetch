@@ -1,6 +1,5 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-// import NewItem from "./component/NewItem"
 import NewsGroup from "./Component/NewsGroup"
 function App() {
   const [News, setNews] = useState([])
