@@ -1,16 +1,3 @@
-// import fetch from "fetch"
-// import Card from "./components/Card"
-
-// fetch("https://dog.ceo/api/breeds/image/random").then(function (response) {
-//     return response.json()
-
-// function AddCar() {
-//   return (
-//     <Card/>
-//    );
-// }
-
-// export default AddCar
 import axios from "axios"
 import Cards from "./components/Cards"
 import { useEffect, useState } from "react"
